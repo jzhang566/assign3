@@ -1,0 +1,12 @@
+Added a square. 
+Added multiple squares.
+Created  3x3 board of squares. 
+Made the squares able to take on any value. 
+Made it so that clicking on a square marks it with an X. 
+Used the useState function to store the states of the squares. 
+Added an array of square values, and made the board reflect the values in this array. 
+Added a handleClick function for board, which updates the board when a specific square is clicked. 
+Added a state for whose turn it is. 
+Added handling for clicking the same square multiple times. 
+Added a function to check if a player has won, which is called whenever a player clicks. 
+Added text for whenever a player wins. 
