@@ -10,3 +10,12 @@ Added a state for whose turn it is.
 Added handling for clicking the same square multiple times. 
 Added a function to check if a player has won, which is called whenever a player clicks. 
 Added text for whenever a player wins. 
+
+Here is an overall rundown of how the program works:
+There is a square component, which takes in a value and can handle a click. 
+There is a board component, which contains a 3x3 grid of squares.
+There is an array of size 9 called squares, initially set to null, which stores the state of each square. 
+There is a state xIsNext, which stores whose turn it is. 
+There is a function calculateWinner, which checks to see if a player has won the game. 
+
+When a square is clicked, its onSquareClick() function is called. In the board, whenever a square's onSquareClick() is called, handleClick(i) is called, where i is the identifier of the square (0-8). In handleClick(i), if squares[i] is not null (indicating that the square already has a value) or if calculateWinner() returns a value (indicating that a player has already won the game), nothing happens. Otherwise, squares[i] is set to either X or O depending on the value of xIsNext, and xIsNext is flipped. 
